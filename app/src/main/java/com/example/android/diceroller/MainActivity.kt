@@ -17,7 +17,10 @@
 package com.example.android.diceroller
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.android.diceroller.R.id.roll_button
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,5 +29,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //Aquí empieza la solución definitiva
+    val rollButton: Button = findViewById(roll_button)
+        rollButton.setOnClickListener {
+            Toast.makeText(this, "No me clickes puto :(", Toast.LENGTH_SHORT).show()
+        }
     }
 }
