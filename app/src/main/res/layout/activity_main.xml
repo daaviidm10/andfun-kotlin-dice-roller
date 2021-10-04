@@ -25,20 +25,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
         android:id="@+id/dice_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"/>
 
     <Button
         android:id="@+id/roll_button"
+        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Roll"
-        app:icon="@drawable/baseline_fingerprint_24"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
-        />
+        app:icon="@drawable/baseline_fingerprint_24" />
 
 </LinearLayout>
